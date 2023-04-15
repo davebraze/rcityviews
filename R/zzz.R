@@ -21,8 +21,8 @@
   sysfonts::font_add_google("Rampart One")
   sysfonts::font_add_google("Fredericka the Great")
   sysfonts::font_add_google("Dancing Script")
-  #sysfonts::font_add_google("Walter Turncoat")
-  try({
+  sysfonts::font_add_google("Walter Turncoat")
+  #try({
     sysfonts::font_add("American Uncial Regular", system.file("fonts", "uncial.otf", package = "rcityviews"))
     sysfonts::font_add("Rage", system.file("fonts", "rage.ttf", package = "rcityviews"))
   #})
