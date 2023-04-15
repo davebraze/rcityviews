@@ -13,7 +13,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-.onLoad <- function(libname, pkgname) {
+.onAttach <- function(libname, pkgname) {
   sysfonts::font_add_google("Caveat")
   sysfonts::font_add_google("Imbue")
   sysfonts::font_add_google("Damion")
@@ -26,9 +26,6 @@
   sysfonts::font_add("Rage", system.file("fonts", "rage.otf", package = "rcityviews"))
   showtext::showtext_auto()
   osmdata::set_overpass_url("https://overpass.kumi.systems/api/interpreter")
-}
-
-.onAttach <- function(libname, pkgname) {
   packageStartupMessage("Data by \u00A9 OpenStreetMap contributors")
 }
 
